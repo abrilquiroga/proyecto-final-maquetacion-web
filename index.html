@@ -1,14 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--web title-->
     <title>Abril Quiroga web</title>
 
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="style.css" />
+    <!--https://boxicons.com/-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <!--https://remixicon.com/-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wdth,wght@50,200&family=Roboto:ital,wght@0,300;0,400;0,700;1,100;1,400&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- Seccion cabecera de website con logo y barra de nav-->
+    <header>
+      <a href="#" class="logo">Abril Quiroga</a>
+      <!-- truco para que el boton sea clickeable sin usar javascript-->
+      <input type="checkbox" name="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon-action">
+        <div class="bx bx-menu" id="menu-icon"></div>
+      </label>
+
+      <ul class="navlist">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About me</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="hero-text">
+        <h5>Frontend Developer</h5>
+        <h4>React Tech Lead</h4>
+        <h1>Abril Quiroga</h1>
+        <p>
+          Aprende todas las tecnologias conmigo y podras obtener tu <br />
+          primer trabajo de desarrollador web al final del curso
+        </p>
+        <a href="#">CV</a>
+        <a href="#" class="videos"
+          ><i class="ri-play-circle-fill"></i>Mira mi video</a
+        >
+      </div>
+
+      <div class="hero-img">
+        <img src="/assets/imagenes/abiq.png" alt="foto Abril Quiroga" />
+      </div>
+    </section>
+
+    <div class="icons">
+      <a href="#"> <i class="ri-instagram-line"></i> </a>
+      <a href="#"> <i class="ri-youtube-line"></i> </a>
+      <a href="#"> <i class="ri-github-fill"></i> </a>
+    </div>
+
+    <div class="scroll-down">
+      <a href="#"><i class="ri-arrow-down-circle-fill"></i></a>
+    </div>
+  </body>
 </html>
